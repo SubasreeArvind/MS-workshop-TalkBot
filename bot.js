@@ -12,7 +12,7 @@ class EchoBot extends ActivityHandler {
          
          
             //  await context.sendActivity(`You said '${ context.activity.text }'`);
-            await context.sendActivity(context.activity.text.reverse());
+            await context.sendActivity(context.activity.text.split('').reverse().join(''));
 
 
             // By calling next() you ensure that the next BotHandler is run.
